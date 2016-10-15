@@ -13,15 +13,16 @@ and open the template in the editor.
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
         <script src="js/main.js"></script>
         <link rel="stylesheet" href="css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     </head>
     <body ng-controller="ctrl2">
   <input id="fileInput" type="file" ng-model="files" onchange="angular.element(this).scope().processFiles(this)">
-  <div>{{ output }}</div>
+  
 
-  <div ng-repeat="todo in names" class="repeat">
+  <div  class="repeat">
       
-      <table>
-          <tr>
+      <table class="table table-striped">
+          <tr ng-repeat="todo in names">
               <td>{{todo.Change}}</td>
               <td>{{todo['Chg %']}}</td>
               <td>{{todo['Company Name']}}</td>
