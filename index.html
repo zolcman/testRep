@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html ng-app="SearchApp">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+        <script src="js/main.js"></script>
+        <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    </head>
+    <body ng-controller="ctrl2">
+  <input id="fileInput" type="file" ng-model="files" onchange="angular.element(this).scope().processFiles(this)">
+  <div>{{ output }}</div>
+
+  <div ng-repeat="todo in names" class="repeat">
+      
+      <table>
+          <tr>
+              <td>{{todo.Change}}</td>
+              <td>{{todo['Chg %']}}</td>
+              <td>{{todo['Company Name']}}</td>
+              <td>{{todo['Mkt Cap\r']}}</td>
+              <td>{{todo.Name}}</td>
+              <td>{{todo.Price}}</td>
+              
+         </tr>
+      </table>
+      
+      <div class="comname"></div>
+      <div class="price"></div>
+      <div class="change"></div>
+  </div>
+</body>
+</html>

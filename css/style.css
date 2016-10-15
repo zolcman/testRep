@@ -1,0 +1,8 @@
+
+.repeat table {
+    width: 100%;
+}
+.repeat td {
+    width: 15%;
+    text-align: left;
+}
