@@ -18,7 +18,7 @@ function csvJSON(csv){
 
   }
   
-  //return result; //JavaScript object
+  
   return result; //JSON
 }
 
@@ -29,9 +29,9 @@ SearchApp.controller('ctrl2', ['$scope', function ($scope) {
       var reader = new FileReader();
 
       reader.onload = function (e) {
-        // Need to notify angular of this event using $apply
+        
         $scope.$apply(function() {
-         // var output = document.getElementById("fileOutput");
+         
           
           jsonner = csvJSON(e.target.result);
           console.log(jsonner);
