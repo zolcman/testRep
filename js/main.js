@@ -32,7 +32,7 @@ SearchApp.controller('ctrl2', ['$scope', function ($scope) {
         // Need to notify angular of this event using $apply
         $scope.$apply(function() {
          // var output = document.getElementById("fileOutput");
-          $scope.output = e.target.result;
+          
           jsonner = csvJSON(e.target.result);
           console.log(jsonner);
           $scope.names = jsonner;
