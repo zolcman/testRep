@@ -1,8 +1,19 @@
 
 .repeat table {
-    width: 100%;
+    width: 1000px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 20px;
 }
 .repeat td {
     width: 15%;
     text-align: left;
+}
+input#fileInput {
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 24px;
+    margin-top: 20px;
 }
